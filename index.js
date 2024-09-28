@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 const PORT=8899;
 const app=express();
+app.use(cors())
  app.get("/api/v1/products",(req,res)=>{
       let proData=[
         {"id":1,"name":"a","price":567,"quantity":5},
